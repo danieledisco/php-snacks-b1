@@ -1,5 +1,6 @@
 <?php
 
+// Snack 1 Start
 $tappa = [
     [
         'home' => 'Pinerolo',
@@ -40,22 +41,30 @@ $tappa = [
 
 ];
 
-// Test puro php
+// Test puro php 
 //
 // for ($i = 0; $i < count($tappa); $i++) {
 //    echo "<pre>", $tappa[$i]['home'] . ' - ' . $tappa[$i]['guest'] . ' | ' . $tappa[$i]['rate_home'] . '-' . $tappa[$i]['rate_guest'], "</pre>";
 // }
 
+// Snack 1 Stop
 
+// Snack 4 Start
+// Test puro php
+/*
+$numeri = [];
+for ($i = 0; $i < 15; $i++) {
+    $numero = rand(1, 15);
 
+    while (in_array($numero, $numeri)) {
+        $numero = rand(1, 15);
+    }
+    $numeri[] = $numero;
+}
 
-
-
-
-
-
-
-
+var_dump($numeri)
+*/
+// Snack 4 stop
 
 ?>
 
@@ -82,6 +91,32 @@ $tappa = [
         </p>
     <?php } ?>
     <h1>Fine Snack 1</h1>
+
+    <h1>Snack 4</h1>
+    <?php
+    $numeri = [];
+    for ($i = 0; $i < 15; $i++) { ?>
+        <?php
+        $numero = rand(1, 15);
+
+
+        while (in_array($numero, $numeri)) {
+            $numero = rand(1, 15);
+        }
+
+        $numeri[] = $numero;
+        ?>
+        <p>
+            <?php echo $numeri[$i] ?>
+        </p>
+    <?php } ?>
+
+    <h1>Fine Snack 4</h1>
+
+
+
+
+
 </body>
 
 </html>
